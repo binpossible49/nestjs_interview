@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      // https://docs.nestjs.com/cli/scripts#build
+      // https://nodejs.org/api/packages.html#imports
+      // "#entity/*": ["./src/entity/*"],
+      "@common": ["src/common/*"],
+      "@src": ["src/*"]
+    },
+    "target": "ES2021",
+    "outDir": "dist",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "incremental": true,
+    "declaration": true,
+    "newLine": "lf",
+    "strict": false,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    // "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": false,
+    // "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    // https://github.com/Microsoft/TypeScript/issues/2577
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false
+  },
+  "include": ["typings/global.d.ts", "src/**/*", "test/**/*", "bin/**/*"],
+  "exclude": ["node_modules"]
+}
